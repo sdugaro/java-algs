@@ -1,0 +1,932 @@
+
+Submission time Sun-02-Nov 10:06:33
+Raw Score 87.57 / 100.00
+Feedback  See the Assessment Guide for information on how to read this report.
+Assessment Summary
+
+Compilation:  PASSED
+Style:        FAILED
+Findbugs:     No potential bugs found.
+API:          PASSED
+
+Correctness:  34/36 tests passed
+Memory:       1/1 tests passed
+Timing:       11/17 tests passed
+
+Aggregate score: 87.57% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]
+
+Assessment Details
+
+The following files were submitted:
+----------------------------------
+total 32K
+-rw-r--r-- 1 2.7K Nov  2 18:07 Brute.java
+-rw-r--r-- 1 6.0K Nov  2 18:07 Fast.java
+-rw-r--r-- 1 9.8K Nov  2 18:07 Point.java
+-rw-r--r-- 1 6.5K Nov  2 18:07 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac Point.java
+*-----------------------------------------------------------
+================================================================
+
+% javac Brute.java
+*-----------------------------------------------------------
+================================================================
+
+% javac Fast.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+Point.java:162:13: '(' is followed by whitespace.
+Point.java:166:13: '(' is followed by whitespace.
+Point.java:183:13: '(' is followed by whitespace.
+Point.java:183:29: ')' is preceded with whitespace.
+Point.java:184:18: '(' is followed by whitespace.
+Point.java:185:18: '(' is followed by whitespace.
+Point.java:207:31: ',' is not followed by whitespace.
+Point.java:208:31: ',' is not followed by whitespace.
+Point.java:209:31: ',' is not followed by whitespace.
+Point.java:210:31: ',' is not followed by whitespace.
+Point.java:211:32: ',' is not followed by whitespace.
+Point.java:212:31: ',' is not followed by whitespace.
+Point.java:213:31: ',' is not followed by whitespace.
+Point.java:241:31: ',' is not followed by whitespace.
+Point.java:241:37: ',' is not followed by whitespace.
+Point.java:241:43: ',' is not followed by whitespace.
+Point.java:241:49: ',' is not followed by whitespace.
+Point.java:241:55: ',' is not followed by whitespace.
+Point.java:243:12: 'for' is not followed by whitespace.
+Point.java:245:25: ',' is not followed by whitespace.
+Point.java:246:12: 'for' is not followed by whitespace.
+Point.java:250:29: ',' is not followed by whitespace.
+Point.java:250:31: ',' is not followed by whitespace.
+Point.java:250:33: ',' is not followed by whitespace.
+Point.java:250:35: ',' is not followed by whitespace.
+Point.java:250:37: ',' is not followed by whitespace.
+Point.java:250:39: ',' is not followed by whitespace.
+Point.java:254:15: 'if' is not followed by whitespace.
+Point.java:254:16: '(' is followed by whitespace.
+Point.java:258:28: ',' is not followed by whitespace.
+Point.java:261:15: 'if' is not followed by whitespace.
+Point.java:261:16: '(' is followed by whitespace.
+Point.java:265:28: ',' is not followed by whitespace.
+Point.java:268:15: 'if' is not followed by whitespace.
+Point.java:268:16: '(' is followed by whitespace.
+Point.java:271:28: ',' is not followed by whitespace.
+Point.java:274:15: 'if' is not followed by whitespace.
+Point.java:274:16: '(' is followed by whitespace.
+Brute.java:36:14: 'while' is not followed by whitespace.
+Brute.java:36:31: '{' is not preceded with whitespace.
+Brute.java:39:37: ',' is not followed by whitespace.
+Brute.java:44:29: ',' is not followed by whitespace.
+Brute.java:45:29: ',' is not followed by whitespace.
+Brute.java:52:14: '(' is followed by whitespace.
+Brute.java:53:18: '(' is followed by whitespace.
+Brute.java:54:22: '(' is followed by whitespace.
+Brute.java:55:26: '(' is followed by whitespace.
+Brute.java:64:29: '(' is followed by whitespace.
+Brute.java:64:50: ')' is preceded with whitespace.
+Fast.java:51:14: 'while' is not followed by whitespace.
+Fast.java:51:31: '{' is not preceded with whitespace.
+Fast.java:54:37: ',' is not followed by whitespace.
+Fast.java:60:12: 'for' is not followed by whitespace.
+Fast.java:60:13: '(' is followed by whitespace.
+Fast.java:60:50: Only one statement per line allowed.
+Fast.java:64:30: ',' is not followed by whitespace.
+Fast.java:75:21: '=' is not preceded with whitespace.
+Fast.java:75:22: '=' is not followed by whitespace.
+Fast.java:75:26: '<' is not preceded with whitespace.
+Fast.java:75:27: '<' is not followed by whitespace.
+Fast.java:89:19: '(' is followed by whitespace.
+Fast.java:89:34: ')' is preceded with whitespace.
+Fast.java:95:17: 'if' is not followed by whitespace.
+Fast.java:95:18: '(' is followed by whitespace.
+Fast.java:103:30: '=' is not preceded with whitespace.
+Fast.java:103:31: '=' is not followed by whitespace.
+Fast.java:103:40: '<' is not preceded with whitespace.
+Fast.java:103:41: '<' is not followed by whitespace.
+Fast.java:115:23: '(' is followed by whitespace.
+Fast.java:115:39: ')' is preceded with whitespace.
+Fast.java:121:32: 'for' is not followed by whitespace.
+Fast.java:121:38: '=' is not preceded with whitespace.
+Fast.java:121:39: '=' is not followed by whitespace.
+Fast.java:128:29: '(' is followed by whitespace.
+Fast.java:128:39: ')' is preceded with whitespace.
+Fast.java:131:27: '(' is followed by whitespace.
+Fast.java:131:38: ')' is preceded with whitespace.
+Fast.java:142:16: 'for' is not followed by whitespace.
+Fast.java:142:17: '(' is followed by whitespace.
+Fast.java:142:24: '=' is not preceded with whitespace.
+Fast.java:142:25: '=' is not followed by whitespace.
+Fast.java:142:30: '<' is not preceded with whitespace.
+Fast.java:142:31: '<' is not followed by whitespace.
+Fast.java:150:29: ',' is not followed by whitespace.
+Fast.java:151:29: ',' is not followed by whitespace.
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+Point:
+
+Brute:
+
+Fast:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in Point
+*-----------------------------------------------------------
+Running 3 total tests.
+
+Test 1: p.slopeTo(q)
+  *  positive infinite slope, where p and q have coordinates in [0, 500)
+  *  positive infinite slope, where p and q have coordinates in [0, 32768)
+  *  negative infinite slope, where p and q have coordinates in [0, 500)
+  *  negative infinite slope, where p and q have coordinates in [0, 32768)
+  *  positive zero     slope, where p and q have coordinates in [0, 500)
+  *  positive zero     slope, where p and q have coordinates in [0, 32768)
+  *  symmetric  for random points p and q with coordinates in [0, 500)
+  *  symmetric  for random points p and q with coordinates in [0, 32768)
+  *  transitive for random points p, q, and r with coordinates in [0, 500)
+  *  transitive for random points p, q, and r with coordinates in [0, 32768)
+  *  slopeTo(), where p and q have coordinates in [0, 500)
+  *  slopeTo(), where p and q have coordinates in [0, 32768)
+  *  slopeTo(), where p and q have coordinates in [0, 10)
+  *  throw a java.lang.NullPointerException if argument is null
+==> passed
+
+Test 2: p.compareTo(q)
+  *  reflexive, where p and q have coordinates in [0, 500)
+  *  reflexive, where p and q have coordinates in [0, 32768)
+  *  antisymmetric, where p and q have coordinates in [0, 500)
+  *  antisymmetric, where p and q have coordinates in [0, 32768)
+  *  transitive, where p, q, and r have coordinates in [0, 500)
+  *  transitive, where p, q, and r have coordinates in [0, 32768)
+  *  sign of compareTo(), where p and q have coordinates in [0, 500)
+  *  sign of compareTo(), where p and q have coordinates in [0, 32768)
+  *  sign of compareTo(), where p and q have coordinates in [0, 10)
+  *  throw java.lang.NullPointerException exception if argument is null
+==> passed
+
+Test 3: p.SLOPE_ORDER.compare(q, r)
+  *  reflexive, where p and q have coordinates in [0, 500)
+  *  reflexive, where p and q have coordinates in [0, 32768)
+  *  antisymmetric, where p, q, and r have coordinates in [0, 500)
+  *  antisymmetric, where p, q, and r have coordinates in [0, 32768)
+  *  transitive, where p, q, r, and s have coordinates in [0, 500)
+  *  transitive, where p, q, r, and s have coordinates in [0, 32768)
+  *  sign of compare(), where p, q, and r have coordinates in [0, 500)
+  *  sign of compare(), where p, q, and r have coordinates in [0, 32768)
+  *  sign of compare(), where p, q, and r have coordinates in [0, 10)
+  *  throw java.lang.NullPointerException if either argument is null
+==> passed
+
+
+Total: 3/3 tests passed!
+
+================================================================
+
+******************************************************************************
+*  correctness (substituting reference Point.java)
+******************************************************************************
+
+Testing methods in Brute
+*-----------------------------------------------------------
+Running 15 total tests.
+
+Test 0: Run on a small input file; show standard output; compare
+standard output to the reference solution
+
+  *  calling Brute.main("input8.txt")
+     [standard output]
+     (10000, 0)->(7000, 3000)->(3000, 7000)->(0, 10000)
+     (3000, 4000)->(6000, 7000)->(14000, 15000)->(20000, 21000)
+
+  *  calling Brute.main("input8.txt") a second time
+     [standard output]
+     (10000, 0)->(7000, 3000)->(3000, 7000)->(0, 10000)
+     (3000, 4000)->(6000, 7000)->(14000, 15000)->(20000, 21000)
+
+==> passed
+
+Test 1a (stdout): Points from a file with at most 4 on any line segment
+  *  input8.txt
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+==> passed
+
+Test 1b (stddraw): Points from a file with at most 4 on any line segment
+  *  input8.txt
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+==> passed
+
+Test 2: Points from a file with horizontal line segments
+  *  horizontal5.txt
+  *  horizontal25.txt
+==> passed
+
+Test 3: Points from a file with vertical line segments
+  *  vertical5.txt
+  *  vertical25.txt
+==> passed
+
+Test 4a (stdout):Points from a file with no line segments
+  *  random23.txt
+  *  random38.txt
+==> passed
+
+Test 4b (stddraw): Points from a file with no line segments
+  *  random23.txt
+  *  random38.txt
+==> passed
+
+Test 5 (stddraw): Points from a file with 5 or more on any line segment
+  *  input6.txt
+  *  input9.txt
+  *  input10.txt
+  *  input20.txt
+==> passed
+
+Test 6a (stdout): Points from a file with fewer than 4 points
+  *  input1.txt
+  *  input2.txt
+  *  input3.txt
+==> passed
+
+Test 6b (stddraw): Points from a file with fewer than 4 points
+  *  input1.txt
+  *  input2.txt
+  *  input3.txt
+==> passed
+
+Test 7 (stdraw): Check that each point is drawn exactly once
+  *  equidistant.txt
+     -  student   solution has 16 non-null entries
+     -  reference solution has 15 non-null entries
+     -  3 extra entries in student solution, including: (30000, 0)
+     -  2 missing entries in student solution, including: (2000, 18000)
+  *  input40.txt
+     -  student   solution has 16 non-null entries
+     -  reference solution has 40 non-null entries
+     -  1 extra entry in student solution: (1000, 17000)
+     -  25 missing entries in student solution, including: (10000, 31000)
+  *  input48.txt
+     -  student   solution has 24 non-null entries
+     -  reference solution has 48 non-null entries
+     -  6 extra entries in student solution, including: (18000, 26000)
+     -  30 missing entries in student solution, including: (17000, 31000)
+==> FAILED
+
+Test 8 (stdout): Depends upon compareTo() or compare() returning { -1, +1, 0 }
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+==> passed
+
+Test 9 (stddraw): N random 4-point line segments
+  *   1 random 4-point line segments (not vertical or horizontal)
+  *   5 random 4-point line segments (not vertical or horizontal)
+  *  10 random 4-point line segments (not vertical or horizontal)
+  *  15 random 4-point line segments (not vertical or horizontal)
+==> passed
+
+Test 10 (stddraw): Random distinct points in a given range
+  *   5 random points in [0..10) x [0..10)
+  *  10 random points in [0..10) x [0..10)
+  *  25 random points in [0..10) x [0..10)
+==> passed
+
+Test 11 (stddraw): Points distributed across grids of a given size
+  *   9 random points in [0..3) x [0..3)
+  *  16 random points in [0..4) x [0..4)
+  *  25 random points in [0..5) x [0..5)
+  *  36 random points in [0..6) x [0..6)
+  *  49 random points in [0..7) x [0..7)
+  *  20 random points in [0..5) x [0..4)
+  *  24 random points in [0..6) x [0..4)
+  *  40 random points in [0..10) x [0..4)
+==> passed
+
+
+Total: 14/15 tests passed!
+
+================================================================
+
+Testing methods in Fast
+*-----------------------------------------------------------
+Running 18 total tests.
+
+Test 0: Run on a small input file; show standard output; compare
+        standard output to the reference solution
+
+  *  calling Fast.main("input6.txt")
+     [standard output]
+     <<<(19000, 10000)>>>
+     0:(19000, 10000) : -Infinity
+     1:(18000, 10000) : 0.0
+     2:(32000, 10000) : 0.0
+     3:(21000, 10000) : 0.0
+     4:(14000, 10000) : 0.0
+     5:(1234, 5678) : 0.2432736688055837
+     <<<(18000, 10000)>>>
+     0:(18000, 10000) : -Infinity
+     1:(19000, 10000) : 0.0
+     2:(32000, 10000) : 0.0
+     3:(21000, 10000) : 0.0
+     4:(14000, 10000) : 0.0
+     5:(1234, 5678) : 0.25778360968626984
+     <<<(32000, 10000)>>>
+     0:(32000, 10000) : -Infinity
+     1:(18000, 10000) : 0.0
+     2:(19000, 10000) : 0.0
+     3:(21000, 10000) : 0.0
+     4:(14000, 10000) : 0.0
+     5:(1234, 5678) : 0.14047975037378924
+     <<<(21000, 10000)>>>
+     0:(21000, 10000) : -Infinity
+     1:(32000, 10000) : 0.0
+     2:(18000, 10000) : 0.0
+     3:(19000, 10000) : 0.0
+     4:(14000, 10000) : 0.0
+     5:(1234, 5678) : 0.21865830213497925
+     <<<(1234, 5678)>>>
+     0:(1234, 5678) : -Infinity
+     1:(32000, 10000) : 0.14047975037378924
+     2:(21000, 10000) : 0.21865830213497925
+     3:(19000, 10000) : 0.2432736688055837
+     4:(18000, 10000) : 0.25778360968626984
+     5:(14000, 10000) : 0.33855553814820616
+     <<<(14000, 10000)>>>
+     0:(14000, 10000) : -Infinity
+     1:(32000, 10000) : 0.0
+     2:(21000, 10000) : 0.0
+     3:(19000, 10000) : 0.0
+     4:(18000, 10000) : 0.0
+     5:(1234, 5678) : 0.33855553814820616
+     (14000, 10000) -> (18000, 10000) -> (19000, 10000) -> (21000, 10000) -> (32000, 10000)
+
+      -  student solution has 42 unparsable line(s) of output out of 43, including:
+         5:(1234, 5678) : 0.33855553814820616
+  *  calling Fast.main("input6.txt") a second time
+     [standard output]
+     <<<(19000, 10000)>>>
+     0:(19000, 10000) : -Infinity
+     1:(18000, 10000) : 0.0
+     2:(32000, 10000) : 0.0
+     3:(21000, 10000) : 0.0
+     4:(14000, 10000) : 0.0
+     5:(1234, 5678) : 0.2432736688055837
+     <<<(18000, 10000)>>>
+     0:(18000, 10000) : -Infinity
+     1:(19000, 10000) : 0.0
+     2:(32000, 10000) : 0.0
+     3:(21000, 10000) : 0.0
+     4:(14000, 10000) : 0.0
+     5:(1234, 5678) : 0.25778360968626984
+     <<<(32000, 10000)>>>
+     0:(32000, 10000) : -Infinity
+     1:(18000, 10000) : 0.0
+     2:(19000, 10000) : 0.0
+     3:(21000, 10000) : 0.0
+     4:(14000, 10000) : 0.0
+     5:(1234, 5678) : 0.14047975037378924
+     <<<(21000, 10000)>>>
+     0:(21000, 10000) : -Infinity
+     1:(32000, 10000) : 0.0
+     2:(18000, 10000) : 0.0
+     3:(19000, 10000) : 0.0
+     4:(14000, 10000) : 0.0
+     5:(1234, 5678) : 0.21865830213497925
+     <<<(1234, 5678)>>>
+     0:(1234, 5678) : -Infinity
+     1:(32000, 10000) : 0.14047975037378924
+     2:(21000, 10000) : 0.21865830213497925
+     3:(19000, 10000) : 0.2432736688055837
+     4:(18000, 10000) : 0.25778360968626984
+     5:(14000, 10000) : 0.33855553814820616
+     <<<(14000, 10000)>>>
+     0:(14000, 10000) : -Infinity
+     1:(32000, 10000) : 0.0
+     2:(21000, 10000) : 0.0
+     3:(19000, 10000) : 0.0
+     4:(18000, 10000) : 0.0
+     5:(1234, 5678) : 0.33855553814820616
+     (14000, 10000) -> (18000, 10000) -> (19000, 10000) -> (21000, 10000) -> (32000, 10000)
+
+      -  student solution has 42 unparsable line(s) of output out of 43, including:
+         5:(1234, 5678) : 0.33855553814820616
+  *  calling Fast.main("input8.txt")
+     [standard output]
+     <<<(10000, 0)>>>
+     0:(10000, 0) : -Infinity
+     1:(6000, 7000) : -1.75
+     2:(0, 10000) : -1.0
+     3:(3000, 7000) : -1.0
+     4:(7000, 3000) : -1.0
+     5:(3000, 4000) : -0.5714285714285714
+     6:(20000, 21000) : 2.1
+     7:(14000, 15000) : 3.75
+     <<<(0, 10000)>>>
+     0:(0, 10000) : -Infinity
+     1:(3000, 4000) : -2.0
+     2:(10000, 0) : -1.0
+     3:(3000, 7000) : -1.0
+     4:(7000, 3000) : -1.0
+     5:(6000, 7000) : -0.5
+     6:(14000, 15000) : 0.35714285714285715
+     7:(20000, 21000) : 0.55
+     <<<(3000, 7000)>>>
+     0:(3000, 7000) : -Infinity
+     1:(0, 10000) : -1.0
+     2:(10000, 0) : -1.0
+     3:(7000, 3000) : -1.0
+     4:(6000, 7000) : 0.0
+     5:(14000, 15000) : 0.7272727272727273
+     6:(20000, 21000) : 0.8235294117647058
+     7:(3000, 4000) : Infinity
+     <<<(7000, 3000)>>>
+     0:(7000, 3000) : -Infinity
+     1:(6000, 7000) : -4.0
+     2:(3000, 7000) : -1.0
+     3:(0, 10000) : -1.0
+     4:(10000, 0) : -1.0
+     5:(3000, 4000) : -0.25
+     6:(20000, 21000) : 1.3846153846153846
+     7:(14000, 15000) : 1.7142857142857142
+     <<<(20000, 21000)>>>
+     0:(20000, 21000) : -Infinity
+     1:(0, 10000) : 0.55
+     2:(3000, 7000) : 0.8235294117647058
+     3:(6000, 7000) : 1.0
+     4:(3000, 4000) : 1.0
+     5:(14000, 15000) : 1.0
+     6:(7000, 3000) : 1.3846153846153846
+     7:(10000, 0) : 2.1
+     <<<(3000, 4000)>>>
+     0:(3000, 4000) : -Infinity
+     1:(0, 10000) : -2.0
+     2:(10000, 0) : -0.5714285714285714
+     3:(7000, 3000) : -0.25
+     4:(20000, 21000) : 1.0
+     5:(6000, 7000) : 1.0
+     6:(14000, 15000) : 1.0
+     7:(3000, 7000) : Infinity
+     <<<(14000, 15000)>>>
+     0:(14000, 15000) : -Infinity
+     1:(0, 10000) : 0.35714285714285715
+     2:(3000, 7000) : 0.7272727272727273
+     3:(3000, 4000) : 1.0
+     4:(20000, 21000) : 1.0
+     5:(6000, 7000) : 1.0
+     6:(7000, 3000) : 1.7142857142857142
+     7:(10000, 0) : 3.75
+     <<<(6000, 7000)>>>
+     0:(6000, 7000) : -Infinity
+     1:(7000, 3000) : -4.0
+     2:(10000, 0) : -1.75
+     3:(0, 10000) : -0.5
+     4:(3000, 7000) : 0.0
+     5:(14000, 15000) : 1.0
+     6:(3000, 4000) : 1.0
+     7:(20000, 21000) : 1.0
+     (10000, 0) -> (7000, 3000) -> (3000, 7000) -> (0, 10000)
+     (3000, 4000) -> (6000, 7000) -> (14000, 15000) -> (20000, 21000)
+
+      -  student solution has 72 unparsable line(s) of output out of 74, including:
+         7:(20000, 21000) : 1.0
+  *  calling Fast.main("input8.txt") a second time
+     [standard output]
+     <<<(10000, 0)>>>
+     0:(10000, 0) : -Infinity
+     1:(6000, 7000) : -1.75
+     2:(0, 10000) : -1.0
+     3:(3000, 7000) : -1.0
+     4:(7000, 3000) : -1.0
+     5:(3000, 4000) : -0.5714285714285714
+     6:(20000, 21000) : 2.1
+     7:(14000, 15000) : 3.75
+     <<<(0, 10000)>>>
+     0:(0, 10000) : -Infinity
+     1:(3000, 4000) : -2.0
+     2:(10000, 0) : -1.0
+     3:(3000, 7000) : -1.0
+     4:(7000, 3000) : -1.0
+     5:(6000, 7000) : -0.5
+     6:(14000, 15000) : 0.35714285714285715
+     7:(20000, 21000) : 0.55
+     <<<(3000, 7000)>>>
+     0:(3000, 7000) : -Infinity
+     1:(0, 10000) : -1.0
+     2:(10000, 0) : -1.0
+     3:(7000, 3000) : -1.0
+     4:(6000, 7000) : 0.0
+     5:(14000, 15000) : 0.7272727272727273
+     6:(20000, 21000) : 0.8235294117647058
+     7:(3000, 4000) : Infinity
+     <<<(7000, 3000)>>>
+     0:(7000, 3000) : -Infinity
+     1:(6000, 7000) : -4.0
+     2:(3000, 7000) : -1.0
+     3:(0, 10000) : -1.0
+     4:(10000, 0) : -1.0
+     5:(3000, 4000) : -0.25
+     6:(20000, 21000) : 1.3846153846153846
+     7:(14000, 15000) : 1.7142857142857142
+     <<<(20000, 21000)>>>
+     0:(20000, 21000) : -Infinity
+     1:(0, 10000) : 0.55
+     2:(3000, 7000) : 0.8235294117647058
+     3:(6000, 7000) : 1.0
+     4:(3000, 4000) : 1.0
+     5:(14000, 15000) : 1.0
+     6:(7000, 3000) : 1.3846153846153846
+     7:(10000, 0) : 2.1
+     <<<(3000, 4000)>>>
+     0:(3000, 4000) : -Infinity
+     1:(0, 10000) : -2.0
+     2:(10000, 0) : -0.5714285714285714
+     3:(7000, 3000) : -0.25
+     4:(20000, 21000) : 1.0
+     5:(6000, 7000) : 1.0
+     6:(14000, 15000) : 1.0
+     7:(3000, 7000) : Infinity
+     <<<(14000, 15000)>>>
+     0:(14000, 15000) : -Infinity
+     1:(0, 10000) : 0.35714285714285715
+     2:(3000, 7000) : 0.7272727272727273
+     3:(3000, 4000) : 1.0
+     4:(20000, 21000) : 1.0
+     5:(6000, 7000) : 1.0
+     6:(7000, 3000) : 1.7142857142857142
+     7:(10000, 0) : 3.75
+     <<<(6000, 7000)>>>
+     0:(6000, 7000) : -Infinity
+     1:(7000, 3000) : -4.0
+     2:(10000, 0) : -1.75
+     3:(0, 10000) : -0.5
+     4:(3000, 7000) : 0.0
+     5:(14000, 15000) : 1.0
+     6:(3000, 4000) : 1.0
+     7:(20000, 21000) : 1.0
+     (10000, 0) -> (7000, 3000) -> (3000, 7000) -> (0, 10000)
+     (3000, 4000) -> (6000, 7000) -> (14000, 15000) -> (20000, 21000)
+
+      -  student solution has 72 unparsable line(s) of output out of 74, including:
+         7:(20000, 21000) : 1.0
+==> passed
+
+Test 1a (stdout): Points from a file with at most 4 on any line segment
+  *  input8.txt
+      -  student solution has 72 unparsable line(s) of output out of 74, including:
+         7:(20000, 21000) : 1.0
+  *  equidistant.txt
+      -  student solution has 240 unparsable line(s) of output out of 244, including:
+         14:(10000, 20000) : 14.0
+  *  input40.txt
+      -  student solution has 1640 unparsable line(s) of output out of 1644, including:
+         39:(19000, 26000) : Infinity
+  *  input48.txt
+      -  student solution has 2352 unparsable line(s) of output out of 2358, including:
+         47:(26000, 27000) : Infinity
+  *  input299.txt
+      -  student solution has 89700 unparsable line(s) of output out of 89706, including:
+         298:(28150, 3650) : 281.0
+==> passed
+
+Test 1b (stddraw): Points from a file with at most 4 on any line segment
+  *  input8.txt
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+  *  input299.txt
+==> passed
+
+Test 2a (stdout): Points from a file with horizontal line segments
+  *  horizontal5.txt
+      -  student solution has 420 unparsable line(s) of output out of 425, including:
+         19:(16307, 4652) : 4.309625668449198
+  *  horizontal25.txt
+      -  student solution has 10100 unparsable line(s) of output out of 10125, including:
+         99:(12984, 18593) : 15.766666666666667
+  *  horizontal50.txt
+      -  student solution has 40200 unparsable line(s) of output out of 40250, including:
+         199:(2624, 1040) : 30.286725663716815
+  *  horizontal75.txt
+      -  student solution has 90300 unparsable line(s) of output out of 90375, including:
+         299:(19921, 2248) : 65.5919540229885
+  *  horizontal100.txt
+      -  student solution has 160400 unparsable line(s) of output out of 160500, including:
+         399:(1781, 18394) : 32.83727034120735
+==> passed
+
+Test 2b (stddraw): Points from a file with horizontal line segments
+  *  horizontal5.txt
+  *  horizontal25.txt
+  *  horizontal50.txt
+  *  horizontal75.txt
+  *  horizontal100.txt
+==> passed
+
+Test 3a (stdout): Points from a file with vertical line segments
+  *  vertical5.txt
+      -  student solution has 420 unparsable line(s) of output out of 425, including:
+         19:(8421, 15144) : Infinity
+  *  vertical25.txt
+      -  student solution has 10100 unparsable line(s) of output out of 10125, including:
+         99:(19953, 20439) : Infinity
+  *  vertical50.txt
+      -  student solution has 40200 unparsable line(s) of output out of 40250, including:
+         199:(5949, 6138) : Infinity
+  *  vertical75.txt
+      -  student solution has 90300 unparsable line(s) of output out of 90375, including:
+         299:(11540, 16539) : Infinity
+  *  vertical100.txt
+      -  student solution has 160400 unparsable line(s) of output out of 160500, including:
+         399:(17445, 11670) : Infinity
+==> passed
+
+Test 3b (stddraw): Points from a file with vertical line segments
+  *  vertical5.txt
+  *  vertical25.txt
+  *  vertical50.txt
+  *  vertical75.txt
+  *  vertical100.txt
+==> passed
+
+Test 4a (stdout): Points from a file with no line segments
+  *  random23.txt
+      -  student solution has 552 unparsable line(s) of output out of 552, including:
+         22:(14445, 9157) : 5.827419354838709
+  *  random38.txt
+      -  student solution has 1482 unparsable line(s) of output out of 1482, including:
+         37:(2832, 4356) : 62.750716332378225
+  *  random91.txt
+      -  student solution has 8372 unparsable line(s) of output out of 8372, including:
+         90:(30058, 29678) : 89.80165289256199
+  *  random152.txt
+      -  student solution has 23256 unparsable line(s) of output out of 23256, including:
+         151:(19527, 31257) : 37.06707317073171
+==> passed
+
+Test 4b (stddraw): Points from a file with no line segments
+  *  random23.txt
+  *  random38.txt
+  *  random91.txt
+  *  random152.txt
+==> passed
+
+Test 5a (stdout): Points from a file with 5 or more on some line segments
+  *  input6.txt
+      -  student solution has 42 unparsable line(s) of output out of 43, including:
+         5:(1234, 5678) : 0.33855553814820616
+  *  input9.txt
+      -  student solution has 90 unparsable line(s) of output out of 91, including:
+         8:(9000, 9000) : 1.0
+  *  input10.txt
+      -  student solution has 110 unparsable line(s) of output out of 112, including:
+         9:(28000, 13500) : Infinity
+  *  input20.txt
+      -  student solution has 420 unparsable line(s) of output out of 425, including:
+         19:(7168, 25088) : Infinity
+  *  input50.txt
+      -  student solution has 2550 unparsable line(s) of output out of 2557, including:
+         49:(26000, 27000) : Infinity
+  *  input80.txt
+      -  student solution has 6480 unparsable line(s) of output out of 6511, including:
+         79:(23000, 19000) : Infinity
+  *  input300.txt
+      -  student solution has 90300 unparsable line(s) of output out of 90306, including:
+         299:(28150, 3650) : 281.0
+  *  kw1260.txt
+      -  student solution has 1588860 unparsable line(s) of output out of 1589148, including:
+         1259:(14210, 11888) : 713.8846153846154
+  *  rs1423.txt
+     java.lang.OutOfMemoryError: Java heap space
+     java.util.Arrays.copyOfRange(Arrays.java:2694)
+     java.lang.String.<init>(String.java:203)
+     java.lang.String.substring(String.java:1913)
+     java.lang.String.trim(String.java:2732)
+     TestBrute.parse(TestBrute.java:99)
+     ...
+     TestFast.parse(TestFast.java:129)
+     TestFast.stdout(TestFast.java:111)
+     TestFast.fileStdout(TestFast.java:139)
+     TestFast.test5a(TestFast.java:247)
+     TestFast.main(TestFast.java:464)
+
+  *  inarow.txt
+      -  student solution has 870 unparsable line(s) of output out of 875, including:
+         28:(0, 0) : Infinity
+==> FAILED
+
+Test 5b (stddraw): Points from a file with 5 or more on some line segments
+  *  input6.txt
+  *  input9.txt
+  *  input10.txt
+  *  input20.txt
+  *  input50.txt
+  *  input80.txt
+  *  input300.txt
+  *  kw1260.txt
+  *  rs1423.txt
+  *  inarow.txt
+==> passed
+
+Test 6a (stdout): Points from a file with fewer than 4 points
+  *  input1.txt
+      -  student solution has 2 unparsable line(s) of output out of 2, including:
+         0:(16000, 16000) : -Infinity
+  *  input2.txt
+      -  student solution has 6 unparsable line(s) of output out of 6, including:
+         1:(16000, 16000) : 1.0
+  *  input3.txt
+      -  student solution has 12 unparsable line(s) of output out of 12, including:
+         2:(16000, 16000) : 1.0
+==> passed
+
+Test 6b (stddraw): Points from a file with fewer than 4 points
+  *  input1.txt
+  *  input2.txt
+  *  input3.txt
+==> passed
+
+Test 7 (stdraw): Check that each point is drawn exactly once
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+==> passed
+
+Test 8 (stdout): Depends upon compareTo() or compare() returning { -1, +1, or 0 }.
+  *  equidistant.txt
+      -  student solution has 240 unparsable line(s) of output out of 244, including:
+         14:(10000, 20000) : 14.0
+  *  input40.txt
+      -  student solution has 1640 unparsable line(s) of output out of 1644, including:
+         39:(19000, 26000) : Infinity
+  *  input48.txt
+      -  student solution has 2352 unparsable line(s) of output out of 2358, including:
+         47:(26000, 27000) : Infinity
+  *  input299.txt
+      -  student solution has 89700 unparsable line(s) of output out of 89706, including:
+         298:(28150, 3650) : 281.0
+==> passed
+
+Test 9 (stddraw): N random 4-point line segments
+  *    1 random 4-point line segments (not vertical or horizontal)
+  *    5 random 4-point line segments (not vertical or horizontal)
+  *   25 random 4-point line segments (not vertical or horizontal)
+  *   50 random 4-point line segments (not vertical or horizontal)
+  *  100 random 4-point line segments (not vertical or horizontal)
+==> passed
+
+Test 10 (stddraw): Random distinct points in a given range
+  *    5 random points in [0..10) x [0..10)
+  *   10 random points in [0..10) x [0..10)
+  *   50 random points in [0..10) x [0..10)
+  *   90 random points in [0..10) x [0..10)
+  *  200 random points in [0..50) x [0..50)
+==> passed
+
+Test 11 (stddraw): N*M points on an N x M grid
+  *    9 random points in [0..3) x [0..3)
+  *   16 random points in [0..4) x [0..4)
+  *   25 random points in [0..5) x [0..5)
+  *  100 random points in [0..10) x [0..10)
+  *  400 random points in [0..20) x [0..20)
+  *   20 random points in [0..5) x [0..4)
+  *   24 random points in [0..6) x [0..4)
+  *   40 random points in [0..10) x [0..4)
+  *   60 random points in [0..15) x [0..4)
+  *  100 random points in [0..25) x [0..4)
+==> passed
+
+
+Total: 17/18 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory usage
+******************************************************************************
+
+Computing memory of Point
+*-----------------------------------------------------------
+Running 1 total tests.
+
+Student memory = 56 bytes (passed)
+
+Total: 1/1 tests passed!
+
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing Brute
+*-----------------------------------------------------------
+Running 4 total tests.
+
+Maximum time allowed per test = 10 seconds
+
+Test 1a-1e: Find collinear points among N random distinct points
+
+                                                      slopeTo()
+             N    time     slopeTo()   compare()  + 2*compare()        compareTo()
+-----------------------------------------------------------------------------------------------
+=> passed    16   0.22        5460           0           5460                   69         
+=> passed    32   0.04      107880           0         107880                  178         
+=> passed    64   0.08     1906128           0        1906128                  432         
+=> passed   128   0.36    32004000           0       32004000                 1169         
+==> 4/4 tests passed
+
+Total: 4/4 tests passed!
+
+================================================================
+
+
+
+Timing Fast
+*-----------------------------------------------------------
+Running 13 total tests.
+
+Maximum time allowed per test = 10 seconds
+
+
+Test 1a-1g: Find collinear points among N random distinct points
+
+                                                      slopeTo()
+             N    time     slopeTo()   compare()  + 2*compare()        compareTo()
+-----------------------------------------------------------------------------------------------
+=> passed   128   1.68       48896       88286         225468                    0         
+=> passed   256   0.92      196096      412865        1021826                    0         
+=> passed   512   1.60      785408     1879839        4545086                    0         
+=> passed  1024   7.07     3143680     8476350       20096380                    0         
+
+lg ratio(slopeTo() + 2*compare()) = lg (20096380 / 4545086) = 2.14
+=> passed
+
+==> 5/5 tests passed
+
+
+Test 2a-2e: Find collinear points among the 4N points on an N x 4 grid
+
+                                                      slopeTo()
+             N    time     slopeTo()   compare()  + 2*compare()        compareTo()
+-----------------------------------------------------------------------------------------------
+=> FAILED   128   6.45      785408     1110798        3007004             60448968   (7.6x)
+=> FAILED   256  57.88     3143680     4404134       11951948            959434455  (27.9x)
+
+Aborting test: last input exceeded time limit of 10 seconds: 57.88
+
+
+lg ratio(slopeTo() + 2*compare()) = lg (0 / 11951948) = -Infinity
+=> passed
+
+==> 1/4 tests passed
+
+
+Test 3a-3e: Find collinear points among the 8N points on an N x 8 grid
+
+                                                      slopeTo()
+             N    time     slopeTo()   compare()  + 2*compare()        compareTo()
+-----------------------------------------------------------------------------------------------
+=> FAILED    64   1.90      785408     1389407        3564222             15068535   (4.1x)
+=> FAILED   128  31.10     3143680     6018082       15179844            236149211  (14.6x)
+
+Aborting test: last input exceeded time limit of 10 seconds: 31.10
+
+
+lg ratio(slopeTo() + 2*compare()) = lg (0 / 15179844) = -Infinity
+=> passed
+
+==> 1/4 tests passed
+
+Total: 7/13 tests passed!
+
+================================================================
+
+
+
+

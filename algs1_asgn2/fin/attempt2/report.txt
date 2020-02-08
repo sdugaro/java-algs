@@ -1,0 +1,696 @@
+
+Submission time Sat-01-Nov 23:01:55
+Raw Score 62.83 / 100.00
+Feedback  See the Assessment Guide for information on how to read this report.
+Assessment Summary
+
+Compilation:  PASSED
+Style:        FAILED
+Findbugs:     No potential bugs found.
+API:          PASSED
+
+Correctness:  26/36 tests passed
+Memory:       1/1 tests passed
+Timing:       4/17 tests passed
+
+Aggregate score: 62.83% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]
+
+Assessment Details
+
+The following files were submitted:
+----------------------------------
+total 32K
+-rw-r--r-- 1 2.7K Nov  2 05:56 Brute.java
+-rw-r--r-- 1 6.0K Nov  2 05:56 Fast.java
+-rw-r--r-- 1 9.7K Nov  2 05:56 Point.java
+-rw-r--r-- 1 6.4K Nov  2 05:56 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac Point.java
+*-----------------------------------------------------------
+================================================================
+
+% javac Brute.java
+*-----------------------------------------------------------
+================================================================
+
+% javac Fast.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+Point.java:162:13: '(' is followed by whitespace.
+Point.java:166:13: '(' is followed by whitespace.
+Point.java:183:13: '(' is followed by whitespace.
+Point.java:183:29: ')' is preceded with whitespace.
+Point.java:184:18: '(' is followed by whitespace.
+Point.java:185:18: '(' is followed by whitespace.
+Point.java:197:31: ',' is not followed by whitespace.
+Point.java:198:31: ',' is not followed by whitespace.
+Point.java:199:31: ',' is not followed by whitespace.
+Point.java:200:31: ',' is not followed by whitespace.
+Point.java:201:32: ',' is not followed by whitespace.
+Point.java:202:31: ',' is not followed by whitespace.
+Point.java:203:31: ',' is not followed by whitespace.
+Point.java:231:31: ',' is not followed by whitespace.
+Point.java:231:37: ',' is not followed by whitespace.
+Point.java:231:43: ',' is not followed by whitespace.
+Point.java:231:49: ',' is not followed by whitespace.
+Point.java:231:55: ',' is not followed by whitespace.
+Point.java:233:12: 'for' is not followed by whitespace.
+Point.java:235:25: ',' is not followed by whitespace.
+Point.java:236:12: 'for' is not followed by whitespace.
+Point.java:240:29: ',' is not followed by whitespace.
+Point.java:240:31: ',' is not followed by whitespace.
+Point.java:240:33: ',' is not followed by whitespace.
+Point.java:240:35: ',' is not followed by whitespace.
+Point.java:240:37: ',' is not followed by whitespace.
+Point.java:240:39: ',' is not followed by whitespace.
+Point.java:244:15: 'if' is not followed by whitespace.
+Point.java:244:16: '(' is followed by whitespace.
+Point.java:248:28: ',' is not followed by whitespace.
+Point.java:251:15: 'if' is not followed by whitespace.
+Point.java:251:16: '(' is followed by whitespace.
+Point.java:255:28: ',' is not followed by whitespace.
+Point.java:258:15: 'if' is not followed by whitespace.
+Point.java:258:16: '(' is followed by whitespace.
+Point.java:261:28: ',' is not followed by whitespace.
+Point.java:264:15: 'if' is not followed by whitespace.
+Point.java:264:16: '(' is followed by whitespace.
+Brute.java:36:14: 'while' is not followed by whitespace.
+Brute.java:36:31: '{' is not preceded with whitespace.
+Brute.java:39:37: ',' is not followed by whitespace.
+Brute.java:44:29: ',' is not followed by whitespace.
+Brute.java:45:29: ',' is not followed by whitespace.
+Brute.java:52:14: '(' is followed by whitespace.
+Brute.java:53:18: '(' is followed by whitespace.
+Brute.java:54:22: '(' is followed by whitespace.
+Brute.java:55:26: '(' is followed by whitespace.
+Brute.java:64:29: '(' is followed by whitespace.
+Brute.java:64:50: ')' is preceded with whitespace.
+Fast.java:40:8: Unused import - java.util.Comparator.
+Fast.java:52:14: 'while' is not followed by whitespace.
+Fast.java:52:31: '{' is not preceded with whitespace.
+Fast.java:55:37: ',' is not followed by whitespace.
+Fast.java:63:30: ',' is not followed by whitespace.
+Fast.java:77:21: '=' is not preceded with whitespace.
+Fast.java:77:22: '=' is not followed by whitespace.
+Fast.java:77:26: '<' is not preceded with whitespace.
+Fast.java:77:27: '<' is not followed by whitespace.
+Fast.java:91:19: '(' is followed by whitespace.
+Fast.java:91:34: ')' is preceded with whitespace.
+Fast.java:97:17: 'if' is not followed by whitespace.
+Fast.java:97:18: '(' is followed by whitespace.
+Fast.java:105:30: '=' is not preceded with whitespace.
+Fast.java:105:31: '=' is not followed by whitespace.
+Fast.java:105:40: '<' is not preceded with whitespace.
+Fast.java:105:41: '<' is not followed by whitespace.
+Fast.java:117:23: '(' is followed by whitespace.
+Fast.java:117:39: ')' is preceded with whitespace.
+Fast.java:123:32: 'for' is not followed by whitespace.
+Fast.java:123:38: '=' is not preceded with whitespace.
+Fast.java:123:39: '=' is not followed by whitespace.
+Fast.java:130:29: '(' is followed by whitespace.
+Fast.java:130:39: ')' is preceded with whitespace.
+Fast.java:133:27: '(' is followed by whitespace.
+Fast.java:133:38: ')' is preceded with whitespace.
+Fast.java:144:16: 'for' is not followed by whitespace.
+Fast.java:144:17: '(' is followed by whitespace.
+Fast.java:144:24: '=' is not preceded with whitespace.
+Fast.java:144:25: '=' is not followed by whitespace.
+Fast.java:144:30: '<' is not preceded with whitespace.
+Fast.java:144:31: '<' is not followed by whitespace.
+Fast.java:152:29: ',' is not followed by whitespace.
+Fast.java:153:29: ',' is not followed by whitespace.
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+Point:
+
+Brute:
+
+Fast:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in Point
+*-----------------------------------------------------------
+Running 3 total tests.
+
+Test 1: p.slopeTo(q)
+  *  positive infinite slope, where p and q have coordinates in [0, 500)
+  *  positive infinite slope, where p and q have coordinates in [0, 32768)
+  *  negative infinite slope, where p and q have coordinates in [0, 500)
+  *  negative infinite slope, where p and q have coordinates in [0, 32768)
+  *  positive zero     slope, where p and q have coordinates in [0, 500)
+  *  positive zero     slope, where p and q have coordinates in [0, 32768)
+  *  symmetric  for random points p and q with coordinates in [0, 500)
+  *  symmetric  for random points p and q with coordinates in [0, 32768)
+  *  transitive for random points p, q, and r with coordinates in [0, 500)
+  *  transitive for random points p, q, and r with coordinates in [0, 32768)
+  *  slopeTo(), where p and q have coordinates in [0, 500)
+  *  slopeTo(), where p and q have coordinates in [0, 32768)
+  *  slopeTo(), where p and q have coordinates in [0, 10)
+  *  throw a java.lang.NullPointerException if argument is null
+==> passed
+
+Test 2: p.compareTo(q)
+  *  reflexive, where p and q have coordinates in [0, 500)
+  *  reflexive, where p and q have coordinates in [0, 32768)
+  *  antisymmetric, where p and q have coordinates in [0, 500)
+  *  antisymmetric, where p and q have coordinates in [0, 32768)
+  *  transitive, where p, q, and r have coordinates in [0, 500)
+  *  transitive, where p, q, and r have coordinates in [0, 32768)
+  *  sign of compareTo(), where p and q have coordinates in [0, 500)
+  *  sign of compareTo(), where p and q have coordinates in [0, 32768)
+  *  sign of compareTo(), where p and q have coordinates in [0, 10)
+  *  throw java.lang.NullPointerException exception if argument is null
+==> passed
+
+Test 3: p.SLOPE_ORDER.compare(q, r)
+  *  reflexive, where p and q have coordinates in [0, 500)
+  *  reflexive, where p and q have coordinates in [0, 32768)
+  *  antisymmetric, where p, q, and r have coordinates in [0, 500)
+  *  antisymmetric, where p, q, and r have coordinates in [0, 32768)
+  *  transitive, where p, q, r, and s have coordinates in [0, 500)
+  *  transitive, where p, q, r, and s have coordinates in [0, 32768)
+  *  sign of compare(), where p, q, and r have coordinates in [0, 500)
+  *  sign of compare(), where p, q, and r have coordinates in [0, 32768)
+  *  sign of compare(), where p, q, and r have coordinates in [0, 10)
+  *  throw java.lang.NullPointerException if either argument is null
+==> passed
+
+
+Total: 3/3 tests passed!
+
+================================================================
+
+******************************************************************************
+*  correctness (substituting reference Point.java)
+******************************************************************************
+
+Testing methods in Brute
+*-----------------------------------------------------------
+Running 15 total tests.
+
+Test 0: Run on a small input file; show standard output; compare
+standard output to the reference solution
+
+  *  calling Brute.main("input8.txt")
+     [standard output]
+     (10000, 0)->(7000, 3000)->(3000, 7000)->(0, 10000)
+     (3000, 4000)->(6000, 7000)->(14000, 15000)->(20000, 21000)
+
+  *  calling Brute.main("input8.txt") a second time
+     [standard output]
+     (10000, 0)->(7000, 3000)->(3000, 7000)->(0, 10000)
+     (3000, 4000)->(6000, 7000)->(14000, 15000)->(20000, 21000)
+
+==> passed
+
+Test 1a (stdout): Points from a file with at most 4 on any line segment
+  *  input8.txt
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+==> passed
+
+Test 1b (stddraw): Points from a file with at most 4 on any line segment
+  *  input8.txt
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+==> passed
+
+Test 2: Points from a file with horizontal line segments
+  *  horizontal5.txt
+  *  horizontal25.txt
+==> passed
+
+Test 3: Points from a file with vertical line segments
+  *  vertical5.txt
+  *  vertical25.txt
+==> passed
+
+Test 4a (stdout):Points from a file with no line segments
+  *  random23.txt
+  *  random38.txt
+==> passed
+
+Test 4b (stddraw): Points from a file with no line segments
+  *  random23.txt
+  *  random38.txt
+==> passed
+
+Test 5 (stddraw): Points from a file with 5 or more on any line segment
+  *  input6.txt
+  *  input9.txt
+  *  input10.txt
+  *  input20.txt
+==> passed
+
+Test 6a (stdout): Points from a file with fewer than 4 points
+  *  input1.txt
+  *  input2.txt
+  *  input3.txt
+==> passed
+
+Test 6b (stddraw): Points from a file with fewer than 4 points
+  *  input1.txt
+  *  input2.txt
+  *  input3.txt
+==> passed
+
+Test 7 (stdraw): Check that each point is drawn exactly once
+  *  equidistant.txt
+     -  student   solution has 16 non-null entries
+     -  reference solution has 15 non-null entries
+     -  3 extra entries in student solution, including: (30000, 0)
+     -  2 missing entries in student solution, including: (2000, 18000)
+  *  input40.txt
+     -  student   solution has 16 non-null entries
+     -  reference solution has 40 non-null entries
+     -  1 extra entry in student solution: (1000, 17000)
+     -  25 missing entries in student solution, including: (10000, 31000)
+  *  input48.txt
+     -  student   solution has 24 non-null entries
+     -  reference solution has 48 non-null entries
+     -  6 extra entries in student solution, including: (18000, 26000)
+     -  30 missing entries in student solution, including: (17000, 31000)
+==> FAILED
+
+Test 8 (stdout): Depends upon compareTo() or compare() returning { -1, +1, 0 }
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+==> passed
+
+Test 9 (stddraw): N random 4-point line segments
+  *   1 random 4-point line segments (not vertical or horizontal)
+  *   5 random 4-point line segments (not vertical or horizontal)
+  *  10 random 4-point line segments (not vertical or horizontal)
+  *  15 random 4-point line segments (not vertical or horizontal)
+==> passed
+
+Test 10 (stddraw): Random distinct points in a given range
+  *   5 random points in [0..10) x [0..10)
+  *  10 random points in [0..10) x [0..10)
+  *  25 random points in [0..10) x [0..10)
+==> passed
+
+Test 11 (stddraw): Points distributed across grids of a given size
+  *   9 random points in [0..3) x [0..3)
+  *  16 random points in [0..4) x [0..4)
+  *  25 random points in [0..5) x [0..5)
+  *  36 random points in [0..6) x [0..6)
+  *  49 random points in [0..7) x [0..7)
+  *  20 random points in [0..5) x [0..4)
+  *  24 random points in [0..6) x [0..4)
+  *  40 random points in [0..10) x [0..4)
+==> passed
+
+
+Total: 14/15 tests passed!
+
+================================================================
+
+Testing methods in Fast
+*-----------------------------------------------------------
+Running 18 total tests.
+
+Test 0: Run on a small input file; show standard output; compare
+        standard output to the reference solution
+
+  *  calling Fast.main("input6.txt")
+     [standard output]
+     (14000, 10000) -> (18000, 10000) -> (19000, 10000) -> (21000, 10000) -> (32000, 10000)
+
+  *  calling Fast.main("input6.txt") a second time
+     [standard output]
+     (14000, 10000) -> (18000, 10000) -> (19000, 10000) -> (21000, 10000) -> (32000, 10000)
+
+  *  calling Fast.main("input8.txt")
+     [standard output]
+     (10000, 0) -> (7000, 3000) -> (3000, 7000) -> (0, 10000)
+     (3000, 4000) -> (6000, 7000) -> (14000, 15000) -> (20000, 21000)
+
+  *  calling Fast.main("input8.txt") a second time
+     [standard output]
+     (10000, 0) -> (7000, 3000) -> (3000, 7000) -> (0, 10000)
+     (3000, 4000) -> (6000, 7000) -> (14000, 15000) -> (20000, 21000)
+
+==> passed
+
+Test 1a (stdout): Points from a file with at most 4 on any line segment
+  *  input8.txt
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+  *  input299.txt
+==> passed
+
+Test 1b (stddraw): Points from a file with at most 4 on any line segment
+  *  input8.txt
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+  *  input299.txt
+==> passed
+
+Test 2a (stdout): Points from a file with horizontal line segments
+  *  horizontal5.txt
+  *  horizontal25.txt
+     -  student   solution has 24 non-null entries
+     -  reference solution has 25 non-null entries
+     -  1 missing entry in student solution: (1697, 2986) -> (1762, 2986) -> (6512, 2986) -> (15748, 2986)
+  *  horizontal50.txt
+     -  student   solution has 49 non-null entries
+     -  reference solution has 50 non-null entries
+     -  1 missing entry in student solution: (8643, 18776) -> (13201, 18776) -> (18979, 18776) -> (19621, 18776)
+  *  horizontal75.txt
+     -  student   solution has 74 non-null entries
+     -  reference solution has 75 non-null entries
+     -  1 missing entry in student solution: (13711, 1871) -> (14177, 1871) -> (14932, 1871) -> (18503, 1871)
+  *  horizontal100.txt
+     -  student   solution has 94 non-null entries
+     -  reference solution has 100 non-null entries
+     -  6 missing entries in student solution, including: (5640, 20636) -> (10242, 20636) -> (13207, 20636) -> (20063, 20636)
+==> FAILED
+
+Test 2b (stddraw): Points from a file with horizontal line segments
+  *  horizontal5.txt
+  *  horizontal25.txt
+     -  student   solution has 24 non-null entries
+     -  reference solution has 25 non-null entries
+     -  1 missing entry in student solution: (1697, 2986) -> (15748, 2986)
+  *  horizontal50.txt
+     -  student   solution has 49 non-null entries
+     -  reference solution has 50 non-null entries
+     -  1 missing entry in student solution: (8643, 18776) -> (19621, 18776)
+  *  horizontal75.txt
+     -  student   solution has 74 non-null entries
+     -  reference solution has 75 non-null entries
+     -  1 missing entry in student solution: (13711, 1871) -> (18503, 1871)
+  *  horizontal100.txt
+     -  student   solution has 94 non-null entries
+     -  reference solution has 100 non-null entries
+     -  6 missing entries in student solution, including: (5640, 20636) -> (20063, 20636)
+==> FAILED
+
+Test 3a (stdout): Points from a file with vertical line segments
+  *  vertical5.txt
+  *  vertical25.txt
+  *  vertical50.txt
+     -  student   solution has 47 non-null entries
+     -  reference solution has 50 non-null entries
+     -  3 missing entries in student solution, including: (13871, 12374) -> (13871, 15848) -> (13871, 17796) -> (13871, 19018)
+  *  vertical75.txt
+     -  student   solution has 73 non-null entries
+     -  reference solution has 75 non-null entries
+     -  2 missing entries in student solution, including: (17620, 1804) -> (17620, 2742) -> (17620, 10489) -> (17620, 17870)
+  *  vertical100.txt
+     -  student   solution has 95 non-null entries
+     -  reference solution has 100 non-null entries
+     -  5 missing entries in student solution, including: (15570, 14475) -> (15570, 14654) -> (15570, 16224) -> (15570, 17117)
+==> FAILED
+
+Test 3b (stddraw): Points from a file with vertical line segments
+  *  vertical5.txt
+  *  vertical25.txt
+  *  vertical50.txt
+     -  student   solution has 47 non-null entries
+     -  reference solution has 50 non-null entries
+     -  3 missing entries in student solution, including: (13871, 12374) -> (13871, 19018)
+  *  vertical75.txt
+     -  student   solution has 73 non-null entries
+     -  reference solution has 75 non-null entries
+     -  2 missing entries in student solution, including: (17620, 1804) -> (17620, 17870)
+  *  vertical100.txt
+     -  student   solution has 95 non-null entries
+     -  reference solution has 100 non-null entries
+     -  5 missing entries in student solution, including: (15570, 14475) -> (15570, 17117)
+==> FAILED
+
+Test 4a (stdout): Points from a file with no line segments
+  *  random23.txt
+  *  random38.txt
+  *  random91.txt
+  *  random152.txt
+==> passed
+
+Test 4b (stddraw): Points from a file with no line segments
+  *  random23.txt
+  *  random38.txt
+  *  random91.txt
+  *  random152.txt
+==> passed
+
+Test 5a (stdout): Points from a file with 5 or more on some line segments
+  *  input6.txt
+  *  input9.txt
+  *  input10.txt
+  *  input20.txt
+  *  input50.txt
+  *  input80.txt
+  *  input300.txt
+  *  kw1260.txt
+     -  student   solution has 280 non-null entries
+     -  reference solution has 288 non-null entries
+     -  8 missing entries in student solution, including: (10752, 19203) -> (10963, 19643) -> (11174, 20083) -> (11385, 20523) -> (11596, 20963)
+  *  rs1423.txt
+     -  student   solution has 431 non-null entries
+     -  reference solution has 443 non-null entries
+     -  12 missing entries in student solution, including: (7509, 26859) -> (7768, 27091) -> (8027, 27323) -> (8286, 27555)
+  *  inarow.txt
+==> FAILED
+
+Test 5b (stddraw): Points from a file with 5 or more on some line segments
+  *  input6.txt
+  *  input9.txt
+  *  input10.txt
+  *  input20.txt
+  *  input50.txt
+  *  input80.txt
+  *  input300.txt
+  *  kw1260.txt
+     -  student   solution has 280 non-null entries
+     -  reference solution has 288 non-null entries
+     -  8 missing entries in student solution, including: (10752, 19203) -> (11596, 20963)
+  *  rs1423.txt
+     -  student   solution has 431 non-null entries
+     -  reference solution has 443 non-null entries
+     -  12 missing entries in student solution, including: (7509, 26859) -> (8286, 27555)
+  *  inarow.txt
+==> FAILED
+
+Test 6a (stdout): Points from a file with fewer than 4 points
+  *  input1.txt
+  *  input2.txt
+  *  input3.txt
+==> passed
+
+Test 6b (stddraw): Points from a file with fewer than 4 points
+  *  input1.txt
+  *  input2.txt
+  *  input3.txt
+==> passed
+
+Test 7 (stdraw): Check that each point is drawn exactly once
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+==> passed
+
+Test 8 (stdout): Depends upon compareTo() or compare() returning { -1, +1, or 0 }.
+  *  equidistant.txt
+  *  input40.txt
+  *  input48.txt
+  *  input299.txt
+==> passed
+
+Test 9 (stddraw): N random 4-point line segments
+  *    1 random 4-point line segments (not vertical or horizontal)
+  *    5 random 4-point line segments (not vertical or horizontal)
+     -  student   solution has 4 non-null entries
+     -  reference solution has 5 non-null entries
+     -  1 missing entry in student solution: (5948, 10136) -> (15644, 14840)
+     [failed on trial 2 of 500]
+  *   25 random 4-point line segments (not vertical or horizontal)
+     -  student   solution has 24 non-null entries
+     -  reference solution has 25 non-null entries
+     -  1 missing entry in student solution: (886, 8244) -> (15838, 19332)
+     [failed on trial 2 of 200]
+  *   50 random 4-point line segments (not vertical or horizontal)
+     -  student   solution has 47 non-null entries
+     -  reference solution has 50 non-null entries
+     -  3 missing entries in student solution, including: (1927, 8409) -> (14767, 12689)
+     [failed on trial 2 of 50]
+  *  100 random 4-point line segments (not vertical or horizontal)
+     -  student   solution has 99 non-null entries
+     -  reference solution has 100 non-null entries
+     -  1 missing entry in student solution: (4799, 4842) -> (6415, 15018)
+     [failed on trial 1 of 10]
+==> FAILED
+
+Test 10 (stddraw): Random distinct points in a given range
+  *    5 random points in [0..10) x [0..10)
+  *   10 random points in [0..10) x [0..10)
+  *   50 random points in [0..10) x [0..10)
+     -  student   solution has 36 non-null entries
+     -  reference solution has 37 non-null entries
+     -  1 missing entry in student solution: (9, 0) -> (5, 8)
+     [failed on trial 4 of 100]
+  *   90 random points in [0..10) x [0..10)
+     -  student   solution has 127 non-null entries
+     -  reference solution has 130 non-null entries
+     -  3 missing entries in student solution, including: (9, 0) -> (9, 9)
+     [failed on trial 2 of 100]
+  *  200 random points in [0..50) x [0..50)
+     -  student   solution has 229 non-null entries
+     -  reference solution has 233 non-null entries
+     -  4 missing entries in student solution, including: (16, 42) -> (30, 49)
+     [failed on trial 1 of 100]
+==> FAILED
+
+Test 11 (stddraw): N*M points on an N x M grid
+  *    9 random points in [0..3) x [0..3)
+  *   16 random points in [0..4) x [0..4)
+  *   25 random points in [0..5) x [0..5)
+  *  100 random points in [0..10) x [0..10)
+     -  student   solution has 153 non-null entries
+     -  reference solution has 154 non-null entries
+     -  1 missing entry in student solution: (7, 0) -> (1, 3)
+     [failed on trial 1 of 1]
+  *  400 random points in [0..20) x [0..20)
+     -  student   solution has 2397 non-null entries
+     -  reference solution has 2446 non-null entries
+     -  49 missing entries in student solution, including: (17, 16) -> (8, 19)
+     [failed on trial 1 of 1]
+  *   20 random points in [0..5) x [0..4)
+  *   24 random points in [0..6) x [0..4)
+  *   40 random points in [0..10) x [0..4)
+  *   60 random points in [0..15) x [0..4)
+  *  100 random points in [0..25) x [0..4)
+     -  student   solution has 210 non-null entries
+     -  reference solution has 213 non-null entries
+     -  3 missing entries in student solution, including: (24, 0) -> (6, 3)
+     [failed on trial 1 of 1]
+==> FAILED
+
+
+Total: 9/18 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory usage
+******************************************************************************
+
+Computing memory of Point
+*-----------------------------------------------------------
+Running 1 total tests.
+
+Student memory = 56 bytes (passed)
+
+Total: 1/1 tests passed!
+
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing Brute
+*-----------------------------------------------------------
+Running 4 total tests.
+
+Maximum time allowed per test = 10 seconds
+
+Test 1a-1e: Find collinear points among N random distinct points
+
+                                                      slopeTo()
+             N    time     slopeTo()   compare()  + 2*compare()        compareTo()
+-----------------------------------------------------------------------------------------------
+=> passed    16   0.09        5460           0           5460                   67         
+=> passed    32   0.02      107880           0         107880                  162         
+=> passed    64   0.04     1906128           0        1906128                  563         
+=> passed   128   0.36    32004000           0       32004000                 1059         
+==> 4/4 tests passed
+
+Total: 4/4 tests passed!
+
+================================================================
+
+
+
+Timing Fast
+*-----------------------------------------------------------
+Running 13 total tests.
+
+Maximum time allowed per test = 10 seconds
+
+
+Test 1a-1g: Find collinear points among N random distinct points
+
+                                                      slopeTo()
+             N    time     slopeTo()   compare()  + 2*compare()        compareTo()
+-----------------------------------------------------------------------------------------------
+=> passed   128   0.15       32512       89456         211424                    0         
+=> passed   256   0.11      130560      414203         958966                    0         
+=> passed   512   0.27      523264     1904815        4332894                    0         
+=> passed  1024   0.46     2095104     8574346       19243796                    0         
+
+lg ratio(slopeTo() + 2*compare()) = lg (19243796 / 4332894) = 2.15
+=> passed
+
+==> 5/5 tests passed
+
+
+Test 2a-2e: Find collinear points among the 4N points on an N x 4 grid
+
+                                                      slopeTo()
+             N    time     slopeTo()   compare()  + 2*compare()        compareTo()
+-----------------------------------------------------------------------------------------------
+=> FAILED   128   1.82      523264     1102462        2728188             50094384   (6.3x)
+=> FAILED   256  23.38     2095104     4353682       10802468            825025674  (24.0x)
+
+Aborting test: last input exceeded time limit of 10 seconds: 23.38
+
+
+lg ratio(slopeTo() + 2*compare()) = lg (0 / 10802468) = -Infinity
+=> passed
+
+==> 1/4 tests passed
+
+
+Test 3a-3e: Find collinear points among the 8N points on an N x 8 grid
+
+                                                      slopeTo()
+             N    time     slopeTo()   compare()  + 2*compare()        compareTo()
+-----------------------------------------------------------------------------------------------
+=> FAILED    64   0.91      523264     1638211        3799686             13011261   (3.5x)
+=> FAILED   128   8.65     2095104     6739610       15574324            206882920  (12.7x)
+
+Total: 0/13 tests passed:Test aborted. Ran out of time or crashed before completion.
+================================================================
+
+
+
+

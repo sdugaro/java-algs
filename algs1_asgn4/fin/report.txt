@@ -1,0 +1,516 @@
+
+Submission time Tue-04-Nov 20:15:33
+Raw Score 97.59 / 100.00
+Feedback  See the Assessment Guide for information on how to read this report.
+Assessment Summary
+
+Compilation:  PASSED
+Style:        FAILED
+Findbugs:     No potential bugs found.
+API:          PASSED
+
+Correctness:  26/27 tests passed
+Memory:       8/8 tests passed
+Timing:       17/17 tests passed
+
+Aggregate score: 97.59% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]
+
+Assessment Details
+
+The following files were submitted:
+----------------------------------
+total 32K
+-rw-r--r-- 1  11K Nov  5 04:16 Board.java
+-rw-r--r-- 1  11K Nov  5 04:16 Solver.java
+-rw-r--r-- 1 6.6K Nov  5 04:16 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac Board.java
+*-----------------------------------------------------------
+================================================================
+
+% javac Solver.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+Board.java:35: Using a static member import should be avoided - java.lang.Math.*.
+Board.java:35: Using the '.*' form of import should be avoided - java.lang.Math.*.
+Board.java:50:19: '=' is not preceded with whitespace.
+Board.java:50:20: '=' is not followed by whitespace.
+Board.java:50:24: '<' is not preceded with whitespace.
+Board.java:50:25: '<' is not followed by whitespace.
+Board.java:51:23: '=' is not preceded with whitespace.
+Board.java:51:24: '=' is not followed by whitespace.
+Board.java:51:28: '<' is not preceded with whitespace.
+Board.java:51:29: '<' is not followed by whitespace.
+Board.java:75:19: '=' is not preceded with whitespace.
+Board.java:75:20: '=' is not followed by whitespace.
+Board.java:75:24: '<' is not preceded with whitespace.
+Board.java:75:25: '<' is not followed by whitespace.
+Board.java:76:23: '=' is not preceded with whitespace.
+Board.java:76:24: '=' is not followed by whitespace.
+Board.java:76:28: '<' is not preceded with whitespace.
+Board.java:76:29: '<' is not followed by whitespace.
+Board.java:103:19: '=' is not preceded with whitespace.
+Board.java:103:20: '=' is not followed by whitespace.
+Board.java:103:24: '<' is not preceded with whitespace.
+Board.java:103:25: '<' is not followed by whitespace.
+Board.java:104:23: '=' is not preceded with whitespace.
+Board.java:104:24: '=' is not followed by whitespace.
+Board.java:104:28: '<' is not preceded with whitespace.
+Board.java:104:29: '<' is not followed by whitespace.
+Board.java:106:22: '==' is not preceded with whitespace.
+Board.java:106:24: '==' is not followed by whitespace.
+Board.java:108:48: 'cast' is not followed by whitespace.
+Board.java:136:19: '=' is not preceded with whitespace.
+Board.java:136:20: '=' is not followed by whitespace.
+Board.java:136:24: '<' is not preceded with whitespace.
+Board.java:136:25: '<' is not followed by whitespace.
+Board.java:137:23: '=' is not preceded with whitespace.
+Board.java:137:24: '=' is not followed by whitespace.
+Board.java:137:28: '<' is not preceded with whitespace.
+Board.java:137:29: '<' is not followed by whitespace.
+Board.java:142:19: '=' is not preceded with whitespace.
+Board.java:142:20: '=' is not followed by whitespace.
+Board.java:142:24: '<' is not preceded with whitespace.
+Board.java:142:25: '<' is not followed by whitespace.
+Board.java:143:23: '=' is not preceded with whitespace.
+Board.java:143:24: '=' is not followed by whitespace.
+Board.java:143:28: '<' is not preceded with whitespace.
+Board.java:143:29: '<' is not followed by whitespace.
+Board.java:143:35: ')' is preceded with whitespace.
+Board.java:144:34: '!=' is not followed by whitespace.
+Board.java:144:54: '!=' is not followed by whitespace.
+Board.java:181:13: '(' is followed by whitespace.
+Board.java:181:35: ')' is preceded with whitespace.
+Board.java:182:19: '=' is not preceded with whitespace.
+Board.java:182:20: '=' is not followed by whitespace.
+Board.java:182:24: '<' is not preceded with whitespace.
+Board.java:182:25: '<' is not followed by whitespace.
+Board.java:183:23: '=' is not preceded with whitespace.
+Board.java:183:24: '=' is not followed by whitespace.
+Board.java:183:28: '<' is not preceded with whitespace.
+Board.java:183:29: '<' is not followed by whitespace.
+Board.java:184:21: '(' is followed by whitespace.
+Board.java:184:53: ')' is preceded with whitespace.
+Board.java:212:15: '=' is not preceded with whitespace.
+Board.java:212:16: '=' is not followed by whitespace.
+Board.java:212:21: '=' is not preceded with whitespace.
+Board.java:212:22: '=' is not followed by whitespace.
+Board.java:213:19: '=' is not preceded with whitespace.
+Board.java:213:20: '=' is not followed by whitespace.
+Board.java:213:24: '<' is not preceded with whitespace.
+Board.java:213:25: '<' is not followed by whitespace.
+Board.java:214:23: '=' is not preceded with whitespace.
+Board.java:214:24: '=' is not followed by whitespace.
+Board.java:214:28: '<' is not preceded with whitespace.
+Board.java:214:29: '<' is not followed by whitespace.
+Board.java:223:19: '=' is not preceded with whitespace.
+Board.java:223:20: '=' is not followed by whitespace.
+Board.java:223:25: '<=' is not preceded with whitespace.
+Board.java:223:27: '<=' is not followed by whitespace.
+Board.java:224:18: '==' is not preceded with whitespace.
+Board.java:224:20: '==' is not followed by whitespace.
+Board.java:227:17: '(' is followed by whitespace.
+Board.java:227:37: '>=' is not followed by whitespace.
+Board.java:227:38: ')' is preceded with whitespace.
+Board.java:239:19: '=' is not preceded with whitespace.
+Board.java:239:20: '=' is not followed by whitespace.
+Board.java:239:25: '<=' is not preceded with whitespace.
+Board.java:239:27: '<=' is not followed by whitespace.
+Board.java:240:18: '==' is not preceded with whitespace.
+Board.java:240:20: '==' is not followed by whitespace.
+Board.java:242:17: '(' is followed by whitespace.
+Board.java:242:37: '>=' is not followed by whitespace.
+Board.java:242:38: ')' is preceded with whitespace.
+Solver.java:112:17: '(' is followed by whitespace.
+Solver.java:112:45: ')' is preceded with whitespace.
+Solver.java:113:22: '(' is followed by whitespace.
+================================================================
+
+
+% findbugs *.class
+*-----------------------------------------------------------
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+Board:
+
+Solver:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in Board
+*-----------------------------------------------------------
+Running 18 total tests.
+
+Tests 6-9 and 17-18 rely upon toString() returning a board in the prescribed format.
+
+Test 1: Test hamming() with file inputs
+  *  puzzle04.txt
+  *  puzzle00.txt
+  *  puzzle07.txt
+  *  puzzle17.txt
+  *  puzzle27.txt
+  *  puzzle2x2-unsolvable1.txt
+==> passed
+
+Test 2: Test hamming() with random N-by-N boards
+  *  2-by-2
+  *  3-by-3
+  *  4-by-4
+  *  5-by-5
+  *  9-by-9
+  *  10-by-10
+==> passed
+
+Test 3: Test manhattan() with file inputs
+  *  puzzle04.txt
+  *  puzzle00.txt
+  *  puzzle07.txt
+  *  puzzle17.txt
+  *  puzzle27.txt
+  *  puzzle2x2-unsolvable1.txt
+==> passed
+
+Test 4: Test manhattan() with random N-by-N boards
+  *  2-by-2
+  *  3-by-3
+  *  4-by-4
+  *  5-by-5
+  *  9-by-9
+  *  10-by-10
+==> passed
+
+Test 5: Test dimension() with random N-by-N boards
+  *  2-by-2
+  *  3-by-3
+  *  4-by-4
+  *  5-by-5
+==> passed
+
+Test 6: Test toString() with file inputs
+  *  puzzle04.txt
+  *  puzzle00.txt
+  *  puzzle06.txt
+  *  puzzle09.txt
+  *  puzzle23.txt
+  *  puzzle2x2-unsolvable1.txt
+==> passed
+
+Test 7: Test neighbors() with file inputs to ensure that the correct neighbor board are generated
+  *  puzzle04.txt
+  *  puzzle00.txt
+  *  puzzle06.txt
+  *  puzzle09.txt
+  *  puzzle23.txt
+  *  puzzle2x2-unsolvable1.txt
+==> passed
+
+Test 8: Test neighbors() with random N-by-N boards
+  *  2-by-2
+  *  3-by-3
+  *  4-by-4
+  *  5-by-5
+  *  9-by-9
+  *  10-by-10
+==> passed
+
+Test 9: Test twin() with file inputs to ensure that a correct twin is generated
+  *  puzzle04.txt
+  *  puzzle00.txt
+  *  puzzle06.txt
+  *  puzzle09.txt
+  *  puzzle23.txt
+  *  puzzle2x2-unsolvable1.txt
+==> passed
+
+Test 10: Test twin() with random N-by-N boards
+  *  2-by-2
+  *  3-by-3
+  *  4-by-4
+  *  5-by-5
+  *  9-by-9
+  *  10-by-10
+==> passed
+
+Test 11: Test isGoal() on file inputs
+  *  puzzle00.txt
+  *  puzzle04.txt
+  *  puzzle16.txt
+  *  puzzle06.txt
+  *  puzzle09.txt
+  *  puzzle23.txt
+  *  puzzle2x2-unsolvable1.txt
+  *  puzzle3x3-unsolvable1.txt
+  *  puzzle3x3-00.txt
+  *  puzzle4x4-00.txt
+==> passed
+
+Test 12: Test isGoal() on N-by-N goal boards
+  *  2-by-2
+  *  3-by-3
+  *  4-by-4
+  *  5-by-5
+  *  6-by-6
+  *  100-by-100
+==> passed
+
+Test 13: Check whether two Board objects can be created at the same time
+  *   random boards of size 3-by-3 and 3-by-3
+  *   random boards of size 4-by-4 and 4-by-4
+  *   random boards of size 2-by-2 and 2-by-2
+  *   random boards of size 3-by-3 and 4-by-4
+  *   random boards of size 4-by-4 and 3-by-3
+==> passed
+
+Test 14: Check equals()
+  *  reflexive
+  *  symmetric
+  *  checks that individual entries of array are equal
+  *  argument is object of type String
+  *  argument is object of type Object
+  *  argument is null
+  *  argument is Board of different dimension
+==> passed
+
+Test 15: Check that Board is immutable by changing argument array after construction
+         and making sure Board does not change
+==> passed
+
+Test 16: Check that Board is immutable by testing whether methods
+         return the same value, regardless of order in which called
+  *  puzzle10.txt
+  *  puzzle20.txt
+  *  puzzle30.txt
+  *  2-by-2
+  *  3-by-3
+  *  4-by-4
+==> passed
+
+Test 17: Call hamming() on a board that is kth-neighbor of a board
+  * 0th neighbor of puzzle27.txt
+  * 1th neighbor of puzzle27.txt
+  * 2th neighbor of puzzle27.txt
+  * 13th neighbor of puzzle27.txt
+  * 13th neighbor of puzzle00.txt
+  * 13th neighbor of puzzle2x2-unsolvable1.txt
+==> passed
+
+Test 18: Call manhattan() on a board that is a kth-neighbor of a board
+  * 0th neighbor of puzzle27.txt
+  * 1th neighbor of puzzle27.txt
+  * 2th neighbor of puzzle27.txt
+  * 13th neighbor of puzzle27.txt
+  * 13th neighbor of puzzle00.txt
+  * 13th neighbor of puzzle2x2-unsolvable1.txt
+==> passed
+
+
+Total: 18/18 tests passed!
+
+================================================================
+
+******************************************************************************
+*  correctness (substituting reference Board.java)
+******************************************************************************
+
+Testing methods in Solver
+*-----------------------------------------------------------
+Running 9 total tests.
+
+Test 1: Call moves() with file inputs to ensure that Solver solves the puzzle in the correct minimum number of moves
+  *  puzzle00.txt
+  *  puzzle01.txt
+  *  puzzle02.txt
+  *  puzzle03.txt
+  *  puzzle04.txt
+  *  puzzle05.txt
+  *  puzzle06.txt
+  *  puzzle07.txt
+  *  puzzle08.txt
+  *  puzzle09.txt
+  *  puzzle10.txt
+  *  puzzle11.txt
+  *  puzzle12.txt
+  *  puzzle13.txt
+==> passed
+
+Test 2: Call solution() with file inputs to ensure that the correct sequence of moves is followed
+  *  puzzle00.txt
+  *  puzzle01.txt
+  *  puzzle02.txt
+  *  puzzle03.txt
+  *  puzzle04.txt
+  *  puzzle05.txt
+  *  puzzle06.txt
+  *  puzzle07.txt
+  *  puzzle08.txt
+  *  puzzle10.txt
+  *  puzzle15.txt
+==> passed
+
+Test 3: Create multiple Solver objects at the same time and still correctly function
+  *  puzzle04.txt and puzzle04.txt
+  *  puzzle00.txt and puzzle04.txt
+  *  puzzle04.txt and puzzle00.txt
+==> passed
+
+Test 4: Call isSolvable() with file inputs
+  *  puzzle01.txt
+  *  puzzle03.txt
+  *  puzzle04.txt
+  *  puzzle17.txt
+  *  puzzle3x3-unsolvable1.txt
+  *  puzzle3x3-unsolvable2.txt
+  *  puzzle4x4-unsolvable.txt
+==> passed
+
+Test 5: Call isSolvable() on random 2-by-2 puzzles
+  *  2-by-2
+==> passed
+
+Test 6: Call moves() on unsolvable puzzles
+  *  puzzle2x2-unsolvable1.txt
+    student   moves() = 1
+    reference moves() = -1
+  *  puzzle2x2-unsolvable2.txt
+    student   moves() = 2
+    reference moves() = -1
+  *  puzzle3x3-unsolvable1.txt
+    student   moves() = 18
+    reference moves() = -1
+  *  puzzle3x3-unsolvable2.txt
+    student   moves() = 24
+    reference moves() = -1
+  *  puzzle4x4-unsolvable.txt
+    student   moves() = 13
+    reference moves() = -1
+==> FAILED
+
+Test 7: Call solution() on unsolvable puzzles
+  *  puzzle2x2-unsolvable1.txt
+  *  puzzle2x2-unsolvable2.txt
+  *  puzzle3x3-unsolvable1.txt
+  *  puzzle3x3-unsolvable2.txt
+  *  puzzle4x4-unsolvable.txt
+==> passed
+
+Test 8: Check that Solver is immutable by comparing the results of two calls
+        each to moves(), isSolvable(), and solution(). The results of these
+        two consecutive calls must match.
+==> passed
+
+Test 9: Call moves() with file inputs
+  *  puzzle14.txt
+  *  puzzle15.txt
+  *  puzzle16.txt
+  *  puzzle17.txt
+  *  puzzle18.txt
+  *  puzzle19.txt
+  *  puzzle20.txt
+  *  puzzle21.txt
+  *  puzzle22.txt
+  *  puzzle23.txt
+  *  puzzle24.txt
+  *  puzzle25.txt
+  *  puzzle26.txt
+  *  puzzle27.txt
+  *  puzzle28.txt
+  *  puzzle29.txt
+  *  puzzle30.txt
+  *  puzzle31.txt
+==> passed
+
+
+Total: 8/9 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory usage
+******************************************************************************
+
+Computing memory of Board
+*-----------------------------------------------------------
+Running 8 total tests.
+
+Memory usage of an N-by-N board
+
+              N       student (bytes)    reference (bytes)
+----------------------------------------------------------
+=> passed     4           248                  248
+=> passed     8           568                  568
+=> passed    12          1016                 1016
+=> passed    16          1592                 1592
+=> passed    20          2296                 2296
+=> passed    36          6392                 6392
+=> passed    72         23096                23096
+=> passed   120         61496                61496
+==> 8/8 tests passed
+
+Total: 8/8 tests passed!
+
+Student   memory = 4.00 N^2 + 32.00 N + 56.00  (R^2 = 1.000)
+Reference memory = 4.00 N^2 + 32.00 N + 56.00  (R^2 = 1.000)
+
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing Solver
+*-----------------------------------------------------------
+Running 17 total tests.
+
+Timing tests use your implementation of Board.java and Solver.java. Maximum allowed time per puzzle is 15 seconds.
+
+                                                              delMin()
+               filename   N    seconds    insert()          + delMax()         max PQ size
+---------------------------------------------------------------------------------------------
+=> passed  puzzle20.txt   3     0.08        695                 418                 278         
+=> passed  puzzle21.txt   3     0.16       3883                2308                1576         
+=> passed  puzzle22.txt   3     0.09       3970                2364                1607         
+=> passed  puzzle23.txt   3     0.12       5654                3343                2312         
+=> passed  puzzle24.txt   3     0.09       6770                4108                2663         
+=> passed  puzzle25.txt   3     0.15      10363                6111                4253         
+=> passed  puzzle26.txt   3     0.14      11289                6703                4587         
+=> passed  puzzle27.txt   3     0.16      11804                7129                4676         
+=> passed  puzzle28.txt   3     0.33      22755               13572                9184         
+=> passed  puzzle29.txt   3     0.31      21209               12676                8534         
+=> passed  puzzle30.txt   3     0.70      41781               25234               16548         
+=> passed  puzzle31.txt   3     0.90      47621               28728               18894         
+=> passed  puzzle34.txt   4     7.85     301956              144992              156965         
+=> passed  puzzle37.txt   4     1.35      68458               32553               35906         
+=> passed  puzzle39.txt   4    16.31     621322              302024              319299         
+=> passed  puzzle41.txt   5     2.27      65384               27766               37619         
+=> passed  puzzle44.txt   5     3.93     119218               52360               66859         
+==> 17/17 tests passed
+
+Total: 17/17 tests passed!
+
+================================================================
+
+
+
+
+

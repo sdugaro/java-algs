@@ -1,0 +1,468 @@
+ Assessment Summary
+
+Compilation:  PASSED
+Style:        FAILED
+Findbugs:     No potential bugs found.
+API:          PASSED
+
+Correctness:  9/19 tests passed
+Memory:       0/7 tests passed
+Timing:       0/6 tests passed
+
+Aggregate score: 30.79% [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]
+
+Assessment Details
+
+The following files were submitted:
+----------------------------------
+total 28K
+-rw-r--r-- 1  18K Dec 10 06:08 SeamCarver.java
+-rw-r--r-- 1 6.1K Dec 10 06:08 studentSubmission.zip
+
+
+******************************************************************************
+*  compiling
+******************************************************************************
+
+
+% javac SeamCarver.java
+*-----------------------------------------------------------
+================================================================
+
+
+
+% checkstyle *.java
+*-----------------------------------------------------------
+SeamCarver.java:103:1: Redundant import from the java.lang package - java.lang.Math.
+SeamCarver.java:126:22: '=' is not preceded with whitespace.
+SeamCarver.java:126:23: '=' is not followed by whitespace.
+SeamCarver.java:139:32: ',' is not followed by whitespace.
+SeamCarver.java:198:12: '(' is followed by whitespace.
+SeamCarver.java:198:62: ')' is preceded with whitespace.
+SeamCarver.java:209:12: Name 'Rx' must match pattern '^[a-z][a-zA-Z0-9]*$|^[A-Z][A-Z_0-9]*$'.
+SeamCarver.java:210:12: Name 'Gx' must match pattern '^[a-z][a-zA-Z0-9]*$|^[A-Z][A-Z_0-9]*$'.
+SeamCarver.java:211:12: Name 'Bx' must match pattern '^[a-z][a-zA-Z0-9]*$|^[A-Z][A-Z_0-9]*$'.
+SeamCarver.java:212:12: Name 'Ry' must match pattern '^[a-z][a-zA-Z0-9]*$|^[A-Z][A-Z_0-9]*$'.
+SeamCarver.java:213:12: Name 'Gy' must match pattern '^[a-z][a-zA-Z0-9]*$|^[A-Z][A-Z_0-9]*$'.
+SeamCarver.java:214:12: Name 'By' must match pattern '^[a-z][a-zA-Z0-9]*$|^[A-Z][A-Z_0-9]*$'.
+SeamCarver.java:232:33: '%' is not preceded with whitespace.
+SeamCarver.java:232:34: '%' is not followed by whitespace.
+SeamCarver.java:232:40: ',' is not followed by whitespace.
+SeamCarver.java:239:49: ',' is not followed by whitespace.
+SeamCarver.java:240:44: ',' is not followed by whitespace.
+SeamCarver.java:278:18: '=' is not preceded with whitespace.
+SeamCarver.java:278:19: '=' is not followed by whitespace.
+SeamCarver.java:278:23: '<' is not preceded with whitespace.
+SeamCarver.java:278:24: '<' is not followed by whitespace.
+SeamCarver.java:287:19: 'for' is not followed by whitespace.
+SeamCarver.java:287:20: '(' is followed by whitespace.
+SeamCarver.java:287:26: '=' is not preceded with whitespace.
+SeamCarver.java:287:27: '=' is not followed by whitespace.
+SeamCarver.java:287:51: Only one statement per line allowed.
+SeamCarver.java:287:54: ',' is not followed by whitespace.
+SeamCarver.java:288:23: '(' is followed by whitespace.
+SeamCarver.java:290:24: ',' is not followed by whitespace.
+SeamCarver.java:292:24: ',' is not followed by whitespace.
+SeamCarver.java:293:20: '(' is followed by whitespace.
+SeamCarver.java:293:22: '%' is not preceded with whitespace.
+SeamCarver.java:293:23: '%' is not followed by whitespace.
+SeamCarver.java:295:28: ',' is not followed by whitespace.
+SeamCarver.java:297:27: '(' is followed by whitespace.
+SeamCarver.java:297:29: '%' is not preceded with whitespace.
+SeamCarver.java:297:30: '%' is not followed by whitespace.
+SeamCarver.java:297:40: ')' is preceded with whitespace.
+SeamCarver.java:299:28: ',' is not followed by whitespace.
+SeamCarver.java:303:24: ',' is not followed by whitespace.
+SeamCarver.java:304:24: ',' is not followed by whitespace.
+SeamCarver.java:312:29: ')' is preceded with whitespace.
+SeamCarver.java:324:44: '%' is not preceded with whitespace.
+SeamCarver.java:324:45: '%' is not followed by whitespace.
+SeamCarver.java:341:12: '(' is followed by whitespace.
+SeamCarver.java:341:25: ')' is preceded with whitespace.
+SeamCarver.java:343:12: '(' is followed by whitespace.
+SeamCarver.java:343:38: ')' is preceded with whitespace.
+SeamCarver.java:345:12: '(' is followed by whitespace.
+SeamCarver.java:345:34: ')' is preceded with whitespace.
+SeamCarver.java:347:11: 'for' is not followed by whitespace.
+SeamCarver.java:347:12: '(' is followed by whitespace.
+SeamCarver.java:347:18: '=' is not preceded with whitespace.
+SeamCarver.java:347:19: '=' is not followed by whitespace.
+SeamCarver.java:348:16: '(' is followed by whitespace.
+SeamCarver.java:348:48: ')' is preceded with whitespace.
+SeamCarver.java:352:18: '=' is not preceded with whitespace.
+SeamCarver.java:352:19: '=' is not followed by whitespace.
+SeamCarver.java:363:18: '=' is not preceded with whitespace.
+SeamCarver.java:363:19: '=' is not followed by whitespace.
+SeamCarver.java:365:22: '=' is not preceded with whitespace.
+SeamCarver.java:365:23: '=' is not followed by whitespace.
+SeamCarver.java:365:27: '<' is not preceded with whitespace.
+SeamCarver.java:365:28: '<' is not followed by whitespace.
+================================================================
+
+
+% findbugs *.class
+*-----------------------------------------------------------
+================================================================
+
+
+Testing the APIs of your programs.
+*-----------------------------------------------------------
+SeamCarver:
+
+================================================================
+
+
+******************************************************************************
+*  correctness
+******************************************************************************
+
+Testing methods in SeamCarver
+*-----------------------------------------------------------
+Running 19 total tests.
+
+Test 1: Test energy() with file inputs
+  *  6x5.png
+  *  4x6.png
+==> passed
+
+Test 2: Test energy() with random N-by-M pictures with 10 trials each
+  *  4-by-4
+  *  5-by-5
+  *  6-by-6
+  *  7-by-7
+==> passed
+
+Test 3: Test width() with input file
+  *  6x5.png
+  *  4x6.png
+==> passed
+
+Test 4: Test width() with random N-by-M picture
+  *  4-by-6
+  *  5-by-5
+  *  6-by-4
+  *  7-by-10
+==> passed
+
+Test 5: Test height() with input file
+  *  6x5.png
+  *  4x6.png
+==> passed
+
+Test 6: Test height() with random N-by-M picture
+  *  4-by-6
+  *  5-by-5
+  *  6-by-4
+  *  7-by-10
+==> passed
+
+Test 7: Test findVerticalSeam() with random N-by-M pictures
+  *  4-by-6
+  *  5-by-5
+  *  6-by-4
+  *  7-by-10
+==> passed
+
+Test 8: Test findVerticalSeam() with file
+  *  6x5.png
+  *  4x6.png
+  *  10x12.png
+  *  3x7.png
+  *  5x6.png
+  *  7x3.png
+  *  12x10.png
+==> passed
+
+Test 9: Test findHorizontalSeam() with random N-by-M pictures
+  *  4-by-6
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 4
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.findHorizontalSeam(SeamCarver.java:397)
+     TestSeamCarver.testFindHorizontalSeam(TestSeamCarver.java:261)
+     TestSeamCarver.testFindHorizontalSeam(TestSeamCarver.java:275)
+     TestSeamCarver.test9(TestSeamCarver.java:475)
+     TestSeamCarver.main(TestSeamCarver.java:1067)
+
+     -  failed on trial 1 of 10
+==> FAILED
+
+Test 10: Test findHorizontalSeam() with file
+  *  6x5.png
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 5
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.findHorizontalSeam(SeamCarver.java:397)
+     TestSeamCarver.testFindHorizontalSeam(TestSeamCarver.java:261)
+     TestSeamCarver.testFindHorizontalSeam(TestSeamCarver.java:289)
+     TestSeamCarver.test10(TestSeamCarver.java:497)
+     TestSeamCarver.main(TestSeamCarver.java:1068)
+
+==> FAILED
+
+Test 11: Check whether exception is called if energy(i, j) are out of bounds
+  *  pic is 6-by-5, (i, j) = (-1, 4)
+     - IndexOutOfBoundsException NOT thrown for energy()
+  *  pic is 6-by-5, (i, j) = (6, 4)
+     - IndexOutOfBoundsException NOT thrown for energy()
+  *  pic is 6-by-5, (i, j) = (5, 5)
+     - IndexOutOfBoundsException NOT thrown for energy()
+  *  pic is 6-by-5, (i, j) = (4, -1)
+  *  pic is 6-by-5, (i, j) = (4, 5)
+==> FAILED
+
+Test 12: Test if exception is thrown if removeVerticalSeam() or removeHoriziontalSeam() array parameter is the wrong length
+  *  pic is 6-by-5, horizontal seam to remove is of length = (1)
+  *  pic is 6-by-5, horizontal seam to remove is of length = (5)
+  *  pic is 6-by-5, vertical seam to remove is of length = (1)
+  *  pic is 6-by-5, vertical seam to remove is of length = (6)
+==> passed
+
+Test 13: Check removeHorizontalSeam() and removeVerticalSeam() with null arguments
+  *  picture = 6x5.png
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 5
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.removeHorizontalSeam(SeamCarver.java:407)
+     TestSeamCarver.testNullArguments(TestSeamCarver.java:623)
+     TestSeamCarver.test13(TestSeamCarver.java:648)
+     TestSeamCarver.main(TestSeamCarver.java:1071)
+
+     -  called removeHorizontalSeam(null)
+     -  but java.lang.NullPointerException not thrown
+  *  picture = 3x7.png
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 3
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.removeHorizontalSeam(SeamCarver.java:407)
+     TestSeamCarver.testNullArguments(TestSeamCarver.java:623)
+     TestSeamCarver.test13(TestSeamCarver.java:649)
+     TestSeamCarver.main(TestSeamCarver.java:1071)
+
+     -  called removeHorizontalSeam(null)
+     -  but java.lang.NullPointerException not thrown
+==> FAILED
+
+Test 14: Test removeHorizontalSeam() with file
+  *  6x5.png
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 5
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.removeHorizontalSeam(SeamCarver.java:407)
+     TestSeamCarver.testRemoveHorizontalSeam(TestSeamCarver.java:808)
+     TestSeamCarver.testRemoveHorizontalSeam(TestSeamCarver.java:784)
+     TestSeamCarver.test14(TestSeamCarver.java:846)
+     TestSeamCarver.main(TestSeamCarver.java:1072)
+
+==> FAILED
+
+Test 15: Test removeVerticalSeam() with random N-by-M pictures
+  *  4-by-6
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 4
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.removeVerticalSeam(SeamCarver.java:353)
+     TestSeamCarver.testRemoveVerticalSeam(TestSeamCarver.java:748)
+     TestSeamCarver.testRemoveVerticalSeam(TestSeamCarver.java:868)
+     TestSeamCarver.test15(TestSeamCarver.java:886)
+     TestSeamCarver.main(TestSeamCarver.java:1073)
+
+     -  failed on trial 1 of 10
+==> FAILED
+
+Test 16: Test removeVerticalSeam() with file
+  *  6x5.png
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 4
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.picture(SeamCarver.java:142)
+     TestSeamCarver.testRemoveVerticalSeam(TestSeamCarver.java:750)
+     TestSeamCarver.testRemoveVerticalSeam(TestSeamCarver.java:687)
+     TestSeamCarver.test16(TestSeamCarver.java:908)
+     TestSeamCarver.main(TestSeamCarver.java:1074)
+
+==> FAILED
+
+Test 17: Test removeHorizontalSeam() with random N-by-M pictures
+  *  4-by-4
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 4
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.removeHorizontalSeam(SeamCarver.java:407)
+     TestSeamCarver.testRemoveHorizontalSeam(TestSeamCarver.java:808)
+     TestSeamCarver.testRemoveHorizontalSeam(TestSeamCarver.java:828)
+     TestSeamCarver.test17(TestSeamCarver.java:931)
+     TestSeamCarver.main(TestSeamCarver.java:1075)
+
+     -  failed on trial 1 of 10
+==> FAILED
+
+Test 18: Check intermixed calls to findHorizontalSeam(), findVerticalSeam(), removeHorizontalSeam(), removeVerticalSeam(). Probabilities of calling each are p1, p2, p3, and p4 respectively. All calls to removal methods are based on randomly generated seams.
+  *  50 calls in 100-by-100 image with probabilties p1=0.0, p2=0.0, p3=0.0, p4=1.0
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 99
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.picture(SeamCarver.java:142)
+     TestSeamCarver.testAll(TestSeamCarver.java:997)
+     TestSeamCarver.test18(TestSeamCarver.java:1019)
+     TestSeamCarver.main(TestSeamCarver.java:1076)
+
+  *  50 calls in 100-by-90 image with probabilties p1=0.0, p2=0.0, p3=1.0, p4=0.0
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 90
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.removeHorizontalSeam(SeamCarver.java:407)
+     TestSeamCarver.testAll(TestSeamCarver.java:979)
+     TestSeamCarver.test18(TestSeamCarver.java:1020)
+     TestSeamCarver.main(TestSeamCarver.java:1076)
+
+  *  50 calls in 90-by-100 image with probabilties p1=0.25, p2=0.25, p3=0.25, p4=0.25
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 90
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.removeHorizontalSeam(SeamCarver.java:407)
+     TestSeamCarver.testAll(TestSeamCarver.java:979)
+     TestSeamCarver.test18(TestSeamCarver.java:1021)
+     TestSeamCarver.main(TestSeamCarver.java:1076)
+
+  *  5 calls in 7-by-9 image with probabilties p1=0.25, p2=0.25, p3=0.25, p4=0.25
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 7
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.removeHorizontalSeam(SeamCarver.java:407)
+     TestSeamCarver.testAll(TestSeamCarver.java:979)
+     TestSeamCarver.test18(TestSeamCarver.java:1022)
+     TestSeamCarver.main(TestSeamCarver.java:1076)
+
+  *  5 calls in 7-by-9 image with probabilties p1=0.25, p2=0.25, p3=0.25, p4=0.25
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 7
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.findHorizontalSeam(SeamCarver.java:397)
+     TestSeamCarver.testAll(TestSeamCarver.java:959)
+     TestSeamCarver.test18(TestSeamCarver.java:1023)
+     TestSeamCarver.main(TestSeamCarver.java:1076)
+
+  *  5 calls in 7-by-9 image with probabilties p1=0.25, p2=0.25, p3=0.25, p4=0.25
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 7
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.transpose(SeamCarver.java:367)
+     SeamCarver.removeHorizontalSeam(SeamCarver.java:407)
+     TestSeamCarver.testAll(TestSeamCarver.java:979)
+     TestSeamCarver.test18(TestSeamCarver.java:1024)
+     TestSeamCarver.main(TestSeamCarver.java:1076)
+
+  *  5 calls in 9-by-7 image with probabilties p1=0.25, p2=0.25, p3=0.25, p4=0.25
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 7
+     java.util.Vector.remove(Vector.java:827)
+     SeamCarver.removeVerticalSeam(SeamCarver.java:353)
+     TestSeamCarver.testAll(TestSeamCarver.java:995)
+     TestSeamCarver.test18(TestSeamCarver.java:1025)
+     TestSeamCarver.main(TestSeamCarver.java:1076)
+
+  *  5 calls in 9-by-7 image with probabilties p1=0.25, p2=0.25, p3=0.25, p4=0.25
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 6
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.picture(SeamCarver.java:142)
+     TestSeamCarver.testAll(TestSeamCarver.java:997)
+     TestSeamCarver.test18(TestSeamCarver.java:1026)
+     TestSeamCarver.main(TestSeamCarver.java:1076)
+
+  *  5 calls in 9-by-7 image with probabilties p1=0.25, p2=0.25, p3=0.25, p4=0.25
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 7
+     java.util.Vector.remove(Vector.java:827)
+     SeamCarver.removeVerticalSeam(SeamCarver.java:353)
+     TestSeamCarver.testAll(TestSeamCarver.java:995)
+     TestSeamCarver.test18(TestSeamCarver.java:1027)
+     TestSeamCarver.main(TestSeamCarver.java:1076)
+
+==> FAILED
+
+Test 19: Test findVerticalSeam() after call to removeVerticalSeam() with random images
+  *  6x5.png
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 4
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.energy(SeamCarver.java:206)
+     SeamCarver.relax(SeamCarver.java:232)
+     SeamCarver.findVerticalSeam(SeamCarver.java:292)
+     TestSeamCarver.testRemoveThenFindVerticalSeam(TestSeamCarver.java:771)
+     TestSeamCarver.testRemoveThenFindVerticalSeam(TestSeamCarver.java:700)
+     TestSeamCarver.test19(TestSeamCarver.java:1040)
+     TestSeamCarver.main(TestSeamCarver.java:1077)
+
+==> FAILED
+
+
+Total: 9/19 tests passed!
+
+================================================================
+
+******************************************************************************
+*  memory
+******************************************************************************
+
+Computing memory of SeamCarver
+*-----------------------------------------------------------
+Running 7 total tests.
+
+Memory usage of a SeamCarver after removing 5 horizontal seams from a WxH image.
+Maximum allowed memory is 5x the reference.
+
+              W, H       student (bytes)    reference (bytes)
+--------------------------------------------------------------
+     java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 9
+     java.util.Vector.get(Vector.java:744)
+     SeamCarver.energy(SeamCarver.java:206)
+     SeamCarver.relax(SeamCarver.java:232)
+     SeamCarver.findVerticalSeam(SeamCarver.java:292)
+     SeamCarver.findHorizontalSeam(SeamCarver.java:398)
+     MemoryOfSeamCarver.main(MemoryOfSeamCarver.java:77)
+
+Total: 0/7 tests passed!
+
+================================================================
+
+
+
+******************************************************************************
+*  timing
+******************************************************************************
+
+Timing SeamCarver
+*-----------------------------------------------------------
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 249
+  at java.util.Vector.get(Vector.java:744)
+  at SeamCarver.energy(SeamCarver.java:206)
+  at SeamCarver.relax(SeamCarver.java:232)
+  at SeamCarver.findVerticalSeam(SeamCarver.java:292)
+  at SeamCarver.findHorizontalSeam(SeamCarver.java:398)
+  at TimeSeamCarver.randomPictureTest(TimeSeamCarver.java:33)
+  at TimeSeamCarver.performAndPrintHVBTimingTest(TimeSeamCarver.java:111)
+  at TimeSeamCarver.randomPictureTests(TimeSeamCarver.java:129)
+  at TimeSeamCarver.main(TimeSeamCarver.java:149)
+Running 6 total tests.
+
+Finding 50 seams but not removing them for a 250-by-250 image
+   width   height  h-seams  v-seams     find   remove     time
+----------------------------------------------------------------
+     250      250       50        0     true    false     4.25
+     250      250        0       50     true    false     1.99
+     250      250       25       25     true    false     2.07
+=> PASSED
+
+Removing 50 randomly generated non-optimal seams for a 250-by-250 image
+   width   height  h-seams  v-seams     find   remove     time
+----------------------------------------------------------------
+     250      250       50        0    false     true     0.20
+     250      250        0       50    false     true     0.00
+     250      250       25       25    false     true     0.09
+=> PASSED
+
+Finding and removing 50 seams for a 250-by-250 image
+   width   height  h-seams  v-seams     find   remove     time
+----------------------------------------------------------------
+
+Total: 0/6 tests passed:Test aborted. Ran out of time or crashed before completion.
+================================================================
+
+
+
+
+
